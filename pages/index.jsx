@@ -28,10 +28,9 @@ const sections = [
         title: "about"
         , children: pug`
           ul
-            li #[Ruby(main="程序", above="programme")]を書く
-            li 日本語（母語）と英語（B2）を話す
-            li 言語を學ぶ（華、粵、波）
-            li #[Ruby(main="電視遊戲", above="video game")]を實況する
+            li i programme things (like þis website)
+            li i speak japanese (native) and english (B2)
+            li i stream gameplay some times
         `,
       },
       {
@@ -51,20 +50,20 @@ const sections = [
         title: "ideology",
         children: pug`
           ul
-            li 自由主義
-            li 性の解放
-            li 親自殺主義
-            li 菜食主義
+            li liberalism
+            li liberation of sexual expression
+            li promortalism
+            li veganism
          `,
       },
       {
         title: "contact",
         children: pug`
-          p 聯絡は以下を使用し給へ
+          p contact me via
           ul
-            li 公開: #[a(href="https://twitter.com/intent/tweet?text=@enkaust") twitter reply]
-            li 非公開: discord DM sumi#1757
-          p 個人情報を含まない限りは公開手段を優先し給へ
+            li public: #[a(href="https://twitter.com/intent/tweet?text=@enkaust") twitter reply]
+            li private: discord DM sumi#1757
+          p prefer public method unless thy message contains my personal information
         `
       },
     ],
@@ -74,7 +73,7 @@ const sections = [
     children: pug`
       ul
         li ****** *******
-        li: Link(href="char-1") 硯と盈
+        li: Link(href="char-1") 硯 and 盈
         li: Link(href="char-2") 侖
     `
   }
