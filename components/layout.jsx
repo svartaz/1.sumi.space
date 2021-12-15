@@ -59,7 +59,7 @@ const Layout = ({ title, sections }) => {
       title= title
     .container
       nav
-        img(src="/sumi.svg", alt="logo")
+        img(src="/sumi.svg")
         #date= ${date}
         Menu(sections=sections, parent=null)
       main
