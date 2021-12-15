@@ -56,7 +56,7 @@ const Layout = ({ title, sections }) => {
 
   return pug`
     head
-      title character
+      title= title
     .container
       nav
         img(src="/sumi.svg", alt="logo")

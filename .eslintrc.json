@@ -1,6 +1,12 @@
 {
+  "plugins": [
+    "react-pug"
+  ],
   "extends": "next/core-web-vitals",
   "rules": {
-    "@next/next/no-img-element": "off"
+    "@next/next/no-img-element": "off",
+    "react-pug/empty-lines": "off",
+    "react-pug/quotes": "off",
+    "react-pug/prop-types": "off"
   }
 }
