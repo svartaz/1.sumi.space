@@ -76,6 +76,7 @@ const Layout = ({ title, sections, children }) => {
   return pug`
     head
       title= title
+      link(rel="icon", href="/sumi.svg")
     .container
       nav
         img(src="/sumi.svg")
