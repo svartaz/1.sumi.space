@@ -49,7 +49,7 @@ const yeardayString = (year, day, base, precision) => {
 const Path = ({ path }) => {
   const segs = path.replace(/^\//, "").split("/");
   return pug`
-  #path
+  span.path
     if path != "/"
       Link(href="/") sumi
       for seg, i in segs
@@ -62,6 +62,11 @@ const Path = ({ path }) => {
 
 const Layout = ({ title, sections, children }) => {
   const [date, setDate] = useState("");
+  const [scroll, setScroll] = useState(0);
+  const onScroll = () => {
+    setScroll(document.documentElement.scrollTop);
+    // to do
+  }
 
   useEffect(() => {
     setInterval(() => {

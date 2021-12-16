@@ -16,11 +16,14 @@ const sections = [
   {
     title: "about",
     children: pug`
-      table.center(style={width: "50%"})
+      table.center(style={maxWidth: "50%"})
         tr
           th
           th
             img.center(src="/lon.svg", width="48px")
+        tr
+          th image
+          td: T20210812
         tr
           th name
           td 侖 (lòn)

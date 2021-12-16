@@ -206,7 +206,6 @@ const sections = [
           li ピアノ
           li 映畫鑑賞
           li 筋力トレーニング
-          li 大麻
           li 酒 (よわし)
       tr
         th 性格
@@ -253,11 +252,11 @@ const Index = ({ Component, props }) => pug`
       li
         |þis page is a summary of #[Link(href="..") ..] for japanese speaker þat are intending to draw suzuli or mitulu.
         br
-        |本pageは硯と盈を かかむとする日本語話者の ための #[Link(href="..") ..] の要約に はべり
+        |本pageは硯と盈を かかむと する日本語話者の ための #[Link(href="..") ..] の要約に はべり
       li
         |any ambiguous description is caused by þe auþor not being an artist, and þou mayst complement it.
         br
-        |作者の畫かき ならざれば生する 曖昧なる點は おもふ ままに 補完したまへ
+        |作者の畫かき ならざれば生する 曖昧なる點は おもふ ままに 補完し たまへ
 `;
 
 export default Index;
