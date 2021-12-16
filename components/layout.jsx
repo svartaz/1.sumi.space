@@ -80,7 +80,10 @@ const Layout = ({ title, sections, children }) => {
       nav
         img(src="/sumi.svg")
         #date= ${date}
-        Menu(sections=sections, parent=null)
+        ul
+          li
+            Link(href="#")= title
+            Menu(sections=sections, parent=null)
       main
         header
           Path(path=path)
