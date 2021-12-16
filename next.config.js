@@ -11,6 +11,10 @@ module.exports = {
       source,
       destination: "/char-1",
       permanent: true,
-    }))
+    })).concat([{
+      source: "/suzuli-mitulu/ja",
+      destination: "/char-1/ja",
+      permanent: true,
+    }])
   }
 };
