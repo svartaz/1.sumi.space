@@ -53,12 +53,10 @@ const Path = ({ path }) => {
     if path != "/"
       Link(href="/") sumi
       for seg, i in segs
-        if i == segs.length - 1
-          span /
-          |#{seg}
-        else
+        if i != segs.length - 1
           span /
           Link(href="/" + segs.slice(0, i + 1))= seg
+      span /
   `
 };
 
@@ -82,11 +80,11 @@ const Layout = ({ title, sections, children }) => {
         #date= ${date}
         ul
           li
+            Path(path=path)
             Link(href="#")= title
             Menu(sections=sections, parent=null)
       main
         header
-          Path(path=path)
           h1= title
         ${children}
         Sections(sections=sections, parent=null)

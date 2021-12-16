@@ -9,12 +9,11 @@ const sections = [
   {
     title: "caution",
     children: pug`
-      p for english language,
+      p for english language, i
       ul
-        li i use ‘þ’ as ‘th’
-        li i may omit ‘a’ and ‘þe’
-        li i use ‘he’ regardless of gender and no ‘she’
-        li i create #[Link(href="https://github.com/xekri/orthography") romanisation and new orthography] for lanauages
+        li use ‘þ’ as ‘th’
+        li may omit ‘a’ and ‘þe’
+        li use ‘he’ regardless of gender and no ‘she’
     `,
   },
   {
@@ -33,6 +32,7 @@ const sections = [
             li i programme things (like þis website)
             li i speak japanese (native) and english (B2)
             li i stream gameplay some times
+            li i create #[Link(href="https://github.com/xekri/orthography") romanisation and new orthography] for lanauages
             li: Link(href="fav") favourite
         `,
       },
