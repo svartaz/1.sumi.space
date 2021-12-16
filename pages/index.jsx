@@ -33,6 +33,7 @@ const sections = [
             li i programme things (like þis website)
             li i speak japanese (native) and english (B2)
             li i stream gameplay some times
+            li: Link(href="fav") favourite
         `,
       },
       {
