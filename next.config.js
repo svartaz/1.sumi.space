@@ -6,4 +6,11 @@ module.exports = {
   trailingSlash: true,
   rules: [
   ],
+  async redirects() {
+    return ["/suzuri", "/suzuri-mituru", "/suzuli-mitulu", "/char/1"].map(source => ({
+      source,
+      destination: "/char-1",
+      permanent: true,
+    }))
+  }
 };

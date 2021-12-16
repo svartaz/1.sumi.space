@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter } from "next/router";
 
 const Section = ({ id, title, children }) => pug`
   section(id=id)
@@ -45,6 +46,23 @@ const yeardayString = (year, day, base, precision) => {
   return `${year.toString(base).toUpperCase()}/${dayInt}.${(dayFrac + "0".repeat(precision)).slice(0, precision)}`;
 };
 
+const Path = ({ path }) => {
+  const segs = path.replace(/^\//, "").split("/");
+  console.log(segs)
+  return pug`
+  #path
+    if path != "/"
+      Link(href="/") sumi
+      for seg, i in segs
+        if i == segs.length - 1
+          span /
+          |#{seg}
+        else
+          span /
+          Link(href="/" + segs.slice(0, i + 1))= seg
+  `
+};
+
 const Layout = ({ title, sections, children }) => {
   const [date, setDate] = useState("");
 
@@ -54,6 +72,7 @@ const Layout = ({ title, sections, children }) => {
     }, 1000 / 10);
   }, [date])
 
+  const path = useRouter().pathname;
   return pug`
     head
       title= title
@@ -63,9 +82,12 @@ const Layout = ({ title, sections, children }) => {
         #date= ${date}
         Menu(sections=sections, parent=null)
       main
-        h1= title
+        header
+          Path(path=path)
+          h1= title
         ${children}
         Sections(sections=sections, parent=null)
+
   `;
 };
 

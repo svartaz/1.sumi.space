@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Layout from "/components/layout";
 import Ruby from "/components/ruby";
 
@@ -55,6 +56,7 @@ const T20200822 = p => (<><blockquote class="twitter-tweet" data-theme="dark"><p
 const T20200804 = p => (<><blockquote class="twitter-tweet" data-theme="dark"><p>まあまあ上手くかけたと思う <a href="https://t.co/2U64U2EcRf">pic.twitter.com/2U64U2EcRf</a></p>&mdash; 絹豆腐📛 (@momentoufuR18) <a href="https://twitter.com/momentoufuR18/status/1290307240197386246?ref_src=twsrc%5Etfw">August 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></>);
 const T20200731 = p => (<><blockquote class="twitter-tweet" data-theme="dark"><p>🔞NFSW🔞<br />skeb納品しました！穴まで描きたかった〜〜〜〜ッ！<br />リクエストありがとうございました🌞<a href="https://t.co/cqMdrGNWyZ">https://t.co/cqMdrGNWyZ</a> <a href="https://t.co/kYUK5iYora">pic.twitter.com/kYUK5iYora</a></p>&mdash; たま魂👼 (@mkotan) <a href="https://twitter.com/mkotan/status/1289200726829195264?ref_src=twsrc%5Etfw">July 31, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></>);
 const T20200724 = p => (<><blockquote class="twitter-tweet" data-theme="dark"><p><a href="https://twitter.com/sumimq?ref_src=twsrc%5Etfw">@sumimq</a> スミくんはぴば♥ <a href="https://t.co/LnbuWVojri">pic.twitter.com/LnbuWVojri</a></p>&mdash; 斎川 (@ti17_) <a href="https://twitter.com/ti17_/status/1286677524563365888?ref_src=twsrc%5Etfw">July 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></>);
+const T20200710 = p => (<><blockquote class="twitter-tweet" data-theme="dark"><p>Commission<a href="https://t.co/GCP58cuKd5">https://t.co/GCP58cuKd5</a> <a href="https://t.co/5sHvE7QLqa">pic.twitter.com/5sHvE7QLqa</a></p>&mdash; ミネむら (@minefarmkun) <a href="https://twitter.com/minefarmkun/status/1281632927529332736?ref_src=twsrc%5Etfw">July 10, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></>);
 const T20200608 = p => (<><blockquote class="twitter-tweet" data-theme="dark"><p>硯君 <a href="https://t.co/0DySjnl0jo">pic.twitter.com/0DySjnl0jo</a></p>&mdash; суми (@sumimq) <a href="https://twitter.com/sumimq/status/1270015188935172097?ref_src=twsrc%5Etfw">June 8, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></>);
 const T20200530 = p => (<><blockquote class="twitter-tweet" data-theme="dark"><p>完 <a href="https://t.co/sZA5QWL5K9">pic.twitter.com/sZA5QWL5K9</a></p>&mdash; СУМИ (@SumiMq) <a href="https://twitter.com/SumiMq/status/1266767231813214208?ref_src=twsrc%5Etfw">May 30, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></>);
 const T20200424 = p => (<><blockquote class="twitter-tweet" data-theme="dark"><p>リクエストありがとうございました～！Skeb(<a href="https://t.co/b5k3RNydjW">https://t.co/b5k3RNydjW</a> )にて, 納品完了です！ <br />※NSFW+18 <a href="https://t.co/GJ892FBly9">pic.twitter.com/GJ892FBly9</a></p>&mdash; 九磨🔞 (@9ma_param) <a href="https://twitter.com/9ma_param/status/1253513328783065088?ref_src=twsrc%5Etfw">April 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></>);
@@ -66,269 +68,196 @@ const T20190831 = p => (<><blockquote class="twitter-tweet" data-theme="dark"><p
 const T20190803 = p => (<><blockquote class="twitter-tweet" data-theme="dark"><p><a href="https://twitter.com/melanophil?ref_src=twsrc%5Etfw">@melanophil</a> めちゃくちゃ遅くなりまして申し訳ないのですがお誕生日おめでとうございます…！ happy birtday... <a href="https://t.co/0XZUjutoOi">pic.twitter.com/0XZUjutoOi</a></p>&mdash; 甘い酒 (@sweetZAKE) <a href="https://twitter.com/sweetZAKE/status/1157737672439320576?ref_src=twsrc%5Etfw">August 3, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></>);
 const T20190718 = p => (<><blockquote class="twitter-tweet" data-theme="dark"><p><a href="https://t.co/tRtU7KUMdD">https://t.co/tRtU7KUMdD</a><a href="https://twitter.com/sikotamazou?ref_src=twsrc%5Etfw">@sikotamazou</a> 先生に依頼していたスズリ君が納品されました　最高に可愛い　文句無し　依頼して良かった</p>&mdash; ſumı (@smiqy) <a href="https://twitter.com/smiqy/status/1151805582556352513?ref_src=twsrc%5Etfw">July 18, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></>);
 const T20181204 = p => (<><blockquote class="twitter-tweet" data-theme="dark"><p>わかんなかったとこは, 捏造した <a href="https://t.co/MPDLpSVi1Q">pic.twitter.com/MPDLpSVi1Q</a></p>&mdash; 一人 (@nasu_zoi) <a href="https://twitter.com/nasu_zoi/status/1069800047636856832?ref_src=twsrc%5Etfw">2018年12月4日</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></>);
-const T20200710 = p => (<><blockquote class="twitter-tweet" data-theme="dark"><p>Commission<a href="https://t.co/GCP58cuKd5">https://t.co/GCP58cuKd5</a> <a href="https://t.co/5sHvE7QLqa">pic.twitter.com/5sHvE7QLqa</a></p>&mdash; ミネむら (@minefarmkun) <a href="https://twitter.com/minefarmkun/status/1281632927529332736?ref_src=twsrc%5Etfw">July 10, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></>);
 
-const title = "suzuli & mitulu";
+const T20200317 = p => (<><blockquote class="twitter-tweet" data-theme="dark"><p dir="ltr">案 <a href="https://t.co/eIolPAAQs7">pic.twitter.com/eIolPAAQs7</a></p>&mdash; SUMI XINM (@sumiQj) <a href="https://twitter.com/sumiQj/status/1239962725746454528?ref_src=twsrc%5Etfw">March 17, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></>);
+
+const title = "硯と盈";
 const sections = [
   {
-    title: "about",
-    children: pug`
-      table.center(style={width: "50%"})
-        tr
-          th
-          td(style={textAlign: "center"})
-            img.center(src="/char-1/suzuli.svg", width="64px")
-          td(style={textAlign: "center"})
-            img.center(src="/char-1/mitulu.svg", width="64px")
-        tr
-          th name
-          for p in [suzuli, mitulu]
-            td: ul
-              for name in p.names
-                li= name
-        tr
-          th iamge
-          td(style={"text-align": "center"})
-            T20201009
-          td(style={"text-align": "center"})
-            T20201230
-            p ⚠
-        tr
-          th age
-          for p in [suzuli, mitulu]
-            td #{p.age} (born on HC#{p.birthYear}/#{p.birthDay})
-        tr
-          th height:[m]
-          for p in [suzuli, mitulu]
-            td #{p.heightM}
-        tr
-          th weight:[kg]
-          for p in [suzuli, mitulu]
-            td #{p.weightKg}
-        tr
-          th ALDH2
-          td NN
-          td MN
-        tr
-          th {hair, eye} colour
-          td lightgray #[Color(color="lightgray")]
-          td black □
-        tr
-          th location
-          td(colspan=2) japan / prefecture musasi
-        tr
-          th occupation
-          td graduate student in Univ #[Ruby(main="葦原", above="asipara")] (CS)
-          td undergraduate student in Univ 葦原 (Math)
-        tr
-          th secsuality
-          td: ul
-            li male (in terms of external genitalia and hormonal balance)
-            li phallophilia
-            li polyamory
-          td: ul
-            li male (in terms of external genitalia and hormonal balance)
-            li phallophilia
-            li monoamory
-        tr
-          th language
-          td: ul
-            li ja #[Ruby(main="東京",above="TùgKìg")] dialect
-            li en-us
-            li yue
-          td: ul
-            li ja #[Ruby(main="京都",above="KìgTòv")] dialect
-            li en-gb
-            li ru
-        tr
-          th theme colour
-          td: ul
-            li black □
-            li magenta #[Color(color="magenta")]
-          td: ul
-            li white #[Color(color="white")]
-            li turquoise #[Color(color="turquoise")]
-        tr
-          th fashion
-          td
-            ul
-              li simple
-              li casual
-              li monochrome (mainly black)
-          td
-            p (not determined)
-
-        tr
-          th favourite book
-          td de l'inconvénient d'être né
-          td l'être et le néant ⚠
-        tr
-          th personality
-          td: ul
-            li logical
-            li consistent
-            li tranquil
-            li reticent
-            li independent
-            li prurient
-          td: ul
-            li logical
-            li pragmatic
-            li cheerful
-            li active
-            li social
-        tr
-          th ideology
-          td: ul
-            li deontological liberalism
-            li promortalism
-          td: ul
-            li preference utilitarianism
-            li antinatalism
-        tr
-          th hoew to address þe oþer
-          td ミツル (mitulu)
-          td スズリ君 (suzuli kun)
-        tr
-          th miscellaneous
-          td: ul
-            li masturbateþ once per day on average
-            li versatile but prefereþ to bottom
-            li likeþ to be choked
-            li acteþ sweet during secsual intercourse
-            li rarely smokeþ
-            li likeþ japanese rocks
-          td: ul
-            li masturbateþ once every two days on average
-            li versatile but prefereþ to bottom
-            li haþ sensitive nipples
-            li easily geteþ lonely
-    `
-  },
-  {
-    title: "wurld",
-    children: pug`
-      ul
-        li souþ korea annecsed and norþ korea
-        li in japan
-          ul
-            li cantonese is more significant þan mandarin since many hongkong people immigrated
-            li hemp and LSD are legalised
-            li legal family name is disused
-            li every one haþ þe right to rename himself
-        li mandarin spoken in china and taiwan is old national pronunciation
-        li cellular agriculture is advanced. þough animal-based food are ethically avoided in most of nations, dietary culture is not substantially different from our.
-    `
-  },
-  {
-    title: "art",
+    title: "畫像",
     children: pug`
       .tiles
-        T20211031
-        T20210730
-        T20210718
-        T20210715
-        div
-          T20210709
-          p 案
-        div
-          T20210627
-          a(href="https://skeb.jp/@sabu_ur/works/3") skeb
-        div
-          T20210607
-          p 本物はもっと肉附きがよい.
-        T20210510
-        T20210509
-        T20210315
-        //<blockquote class="twitter-tweet" data-theme="dark"><p><a href="https://t.co/B063efYM9b">https://t.co/B063efYM9b</a> <a href="https://twitter.com/hashtag/Skeb?src=hash&amp;ref_src=twsrc%5Etfw">#Skeb</a> <a href="https://twitter.com/hashtag/Commission?src=hash&amp;ref_src=twsrc%5Etfw">#Commission</a> <br/><br/>肉駄 <a href="https://t.co/fczOr9hMUL">https://t.co/fczOr9hMUL</a> 先生にイラマされる硯君納品頂きました！　情報量が多くて最高。</p>&mdash; суми, иже ничто създавае (@smiqy) <a href="https://twitter.com/smiqy/status/1357348987833995267?ref_src=twsrc%5Etfw">February 4, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        T20201230
-        //
           div
-            p wurk in progress
-            a(href="https://twitter.com/intent/user?user_id=948471113448792064") 絹豆腐
-            Img(src="/char-1/2020-341.png")
-        T20201210
-        T20201208
-        T20201130
-        T20201122
-        div
-          T20201021
-          Img(src="/char-1/2020-10-15.png")
-        T20201015
-        div
+            T20181204
+            img(src="/char-1/2018-12-04.jpg")
+          T20190718
+          div
+            img(src="/char-1/2019-07-26.jpg")
+            p @AI67448472
           T20201009
+          T20201210
+          T20201230
+          T20210509
+          T20210718
+    `
+  },
+  {
+    title: "概要",
+    children: pug`
+    table.center(style={width: "50%"})
+      tr
+        th
+        td(style={textAlign: "center"})
+          img(src="/char-1/suzuli.svg", width="64px")
+        td(style={textAlign: "center"})
+          img(src="/char-1/mitulu.svg", width="64px")
+      tr
+        th 名
+        td: ul
+          li 硯
+          li suzuli (ja, [sɯzɯɾi])
+        td: ul
+          li 盈
+          li mitulu (ja, [mitɯɾɯ])
+      tr
+        th 畫像
+        td(style={textAlign: "center"})
+          T20190718
+        td(style={textAlign: "center"})
+          T20201009
+      tr
+        th 年齡
+        for p in [suzuli, mitulu]
+          td #{p.age}歳 (人類紀元#{p.birthYear}年#{p.birthDay}日うまれ)
+      tr
+        th 身長/m
+        for p in [suzuli, mitulu]
+          td #{p.heightM}
+      tr
+        th 體質量/kg
+        for p in [suzuli, mitulu]
+          td #{p.weightKg}
+      tr
+        th 性
+        td: ul
+          li 男性（外性器と性激素と性別合和による）
+          li 男性愛者
+          li うけより
+          li くび よわし (愛撫や しめを 好む)
+        td: ul
+          li 男性（外性器と性激素と性別合和による）
+          li 男性愛者
+          li うけより
+          li むね よわし
+      tr
+        th 服裝
+        td
           ul
-            li 髪は輕い癖毛 (假)
-            li 服が思ひ浮かばず困った
-        T20201006
-        //<blockquote class="twitter-tweet" data-theme="dark"><p>動作test. 首に違和感有るけどまあ可いか (疲れた). <a href="https://t.co/LXSU6zzXIl">pic.twitter.com/LXSU6zzXIl</a></p>&mdash; 男根, 大麻, 安樂死 (@smiqy) <a href="https://twitter.com/smiqy/status/1307708387115675650?ref_src=twsrc%5Etfw">September 20, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        div
-          T20200909
-          ul
-            li 服が思ひ浮かばず困った
-            li 髮は輕い癖毛な氣がする
-            li 左目は大抵見𛀁ない
-        //<blockquote class="twitter-tweet" data-theme="dark"><p>/* test */ <a href="https://t.co/cdvn2vvAQ3">pic.twitter.com/cdvn2vvAQ3</a></p>&mdash; 硯玄 (сузури) (@SzrHyn) <a href="https://twitter.com/SzrHyn/status/1301920417381191681?ref_src=twsrc%5Etfw">September 4, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        div
-        T20200822
-          Img(src="/char-1/2020-08-31.png")
-        //div
-          <blockquote class="twitter-tweet" data-theme="dark"><p>- 硯君の表情 考<br/>- 後輩君 <a href="https://t.co/ngIBx6kHit">pic.twitter.com/ngIBx6kHit</a></p>&mdash; 初夏の夜風の涼しさ (@smiqy) <a href="https://twitter.com/smiqy/status/1296894217789136896?ref_src=twsrc%5Etfw">August 21, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          p mitulu: 後から見るとかわいくない
-          p suzuli: 後ろ髪は刈り上げる事も有る
-        div
-          T20200804
-          Img(src="/char-1/2020-08-04.png")
-          a(href="https://twitter.com/intent/user?user_id=948471113448792064") 絹豆腐
-          //img(src="/char-1/2020-08-04-1.png")
-          //img(src="/char-1/2020-08-04-2.png")
-        T20200731
-        T20200724
-        //<blockquote class="twitter-tweet" data-theme="dark"><p>習作 (四肢拘束のつもりだった) <a href="https://t.co/v0mXfg2F6i">pic.twitter.com/v0mXfg2F6i</a></p>&mdash; 初夏の夜風の涼しさ (@sumimq) <a href="https://twitter.com/sumimq/status/1285594214181593088?ref_src=twsrc%5Etfw">July 21, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        //<blockquote class="twitter-tweet" data-theme="dark"><p>硯君 塗った. NSFW. <a href="https://t.co/4c4MhzrkkA">pic.twitter.com/4c4MhzrkkA</a></p>&mdash; 初夏の夜風の涼しさ (@sumimq) <a href="https://twitter.com/sumimq/status/1282856915723157504?ref_src=twsrc%5Etfw">July 14, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        T20200710
-        T20200608
-        T20200530
-        div
-          Img(src="/char-1/2020-04-25.jpg")
-          a(href="https://twitter.com/intent/user?user_id=800300702937399296") 司ろう。
-        T20200424
-        T20200414
-        T20200413
-        div
-          img(src="/char-1/2020-04-08'.jpg")
-          p @nikuda2929 (有償)
-        div 非公開
-        //
-          div
-            p @inuqw
-            Img(src="/char-1/2019-11-25.jpg")
-            <blockquote class="twitter-tweet" data-theme="dark"><p><a href="https://t.co/WSN80Ga6jB">pic.twitter.com/WSN80Ga6jB</a></p>&mdash; sumi (@melanophil) <a href="https://twitter.com/melanophil/status/1188098375045935104?ref_src=twsrc%5Etfw">October 26, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        div
-          Img(src="/char-1/2019-10-11.jpg")
-          a(href="https://twitter.com/intent/user?user_id=800300702937399296") 司ろう。
-        T20190926
-        T20190831
-        T20190803
-        div
-          Img(src="/char-1/2019-07-26.jpg")
-          p @AI67448472
-        //<blockquote class="twitter-tweet" data-conversation="none" data-theme="dark"><p>遅くなりましたが誕生日おめでとう御座います!スズリくん描かせて頂きました… <a href="https://t.co/3JS1r6kXg2">pic.twitter.com/3JS1r6kXg2</a></p>&mdash; まぁく (@MK2ma_c) <a href="https://twitter.com/MK2ma_c/status/1154736325766942720?ref_src=twsrc%5Etfw">July 26, 2019</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        T20190718
-        div
-          Img(src="/char-1/2019-04-23.png")
-        div
-          T20181204
-          Img(src="/char-1/2018-12-04.jpg")
-        div
-          p 非公開
-          //img(src="/char-1/2018-08-01.png")
+            li 單純 (過度の裝飾をこのまず)
+            li 無彩色
+        td (未定. 洒脱ならまほし.)
+      tr
+        th 外見
+        td: ul
+          li 顏: 無表情. じとめ. 威壓的にはあらず.
+          li 體: 健康的. ひきしまりたる筋肉質. いろしろ.
+          li 體毛: 薄墨色. 量は平均的なれど みづから うすくす.
+          li 髮: 薄墨色. みぎめかくれ.
+          li 男根: したそり. 勃起時半むけ. 210mm (ただし數值は一例なり, 視覺上は なほ おほきくとも よし).
+          li 耳と#[a(href="https://en.wikipedia.org/wiki/Prince_Albert_(genital_piercing)") プリンスアルバート]のピアスあり
+            ul
+              li プリンスアルバートは陰莖小帶を切斷せず, ひだりてかはに そる
+              li すべて着脱可能なれば繪にては省略せられ う. ことに插入時は ほとんど かならず プリンスアルバートを はずす.
+            T20200317
+        td: ul
+          li 顏: 童顔. ふとめ つりまゆ. たれめ. あごひげ. いたづらめける ゑかほ.
+          li 體: 健康的, 筋肉質かつ おほから.
+          li 體毛: 黑色. やや けふかめ.
+          li 髮: 黑. 兩目かくれなれど ひだりめ み𛀁かくれす. ややくせけ.
+          li 男根: うはそり. 勃起時半むけ. 180mm (ただし數值は一例なり, 視覺上は なほ おほきくとも よし).
+      tr
+        th 自稱
+        td: ul
+          li 日常にては "わたし"
+          li したしき ひとの まへや 性交中は "僕"
+        td 僕
+      tr
+        th 他方のよびかた
+        td ミツル
+        td スズリ君
+      tr
+        th 所在
+        td(colspan=2) 日本, 武蔵縣 (わが世界に いふ東京都)
+      tr
+        th 言語
+        td: ul
+          li 日本語 (共通語)
+          li 英語 (アメリカ)
+          li 粵語
+        td: ul
+          li 日本語 (共通語と京阪式アクセントの混淆)
+          li 英語 (イギリス)
+          li ロシヤ語
+      tr
+        th 身分
+        td 大學院生 M1 (理論計算機科學)
+        td 大學生 B3 (數學)
+      tr
+        th 趣味
+        td: ul
+          li プログラミング
+          li ベース
+          li 讀書 (SF)
+          li 乱交
+          li 大麻
+          li LSD
+        td: ul
+          li 語學
+          li ピアノ
+          li 映畫鑑賞
+          li 筋力トレーニング
+          li 大麻
+          li 酒 (よわし)
+      tr
+        th 性格
+        td: ul
+          li 論理的
+          li 冷静
+          li 獨立不羈
+          li 快樂主義
+          li すすみて ひとと かかはらざれど あへて さけるわけにもあらず. たのまらば やさしく協力すれば研究室の同輩後輩には したはれたり.
+        td: ul
+          li 論理的
+          li 潑溂
+          li 社交的
+          li 一途
+          li ひとと かかはるを このめば交友關係ひろし. 關係を たもたむが ため腐心する おのれに むなしくなる とき あり.
+      tr
+        th 關係
+        td(colspan=2): ul
+          li 葦原大學 (武蔵縣) の先輩後輩
+          li 盈が硯を つれいづる かたちにて よく あそぶ. 硯宅にて とまるも おほし. 映畫を よく みる.
+          li 硯は盈の活潑さや未知への積極性を, 盈は硯の確乎たる自我や思想を, それぞれ したふ
+          li 約1回/4日の頻度にて性交す. 約3/4の比にて硯が せめとなる. せめうけに よらず 硯が主導しがち.
+    `
+  },
+  {
+    title: "注意",
+    children: pug`
+      ul
+        li 以下を のぞき いかなる副次的 創作物も歡迎し はべり
+        li 禁止: character名稱の不記載または ふせ字や暗號の使用による檢索性の阻礙
+        li 禁止†: 性別, 國籍, 年齡などに もとづく差別的なる限定公開
+        li 禁止†: 性器の檢閱 (mosaic, ぬりつぶし)
+        li 非推獎: 乳房の賦予
+        li 非推獎: したくちびるに線を かき あつみを もたす
+
+      p †公開platformの規約に要請せらる ばあひを のぞき はべり
     `
   }
 ];
 
 const Index = ({ Component, props }) => pug`
   Layout(sections=sections, title=title)
+    ul
+      li
+        |þis page is a summary of #[Link(href="..") ..] for japanese speaker þat are intending to draw suzuli or mitulu.
+        br
+        |本pageは硯と盈を かかむとする日本語話者の ための #[Link(href="..") ..] の要約に はべり
+      li
+        |any ambiguous description is caused by þe auþor not being an artist, and þou mayst complement it.
+        br
+        |作者の畫かき ならざれば生する 曖昧なる點は おもふ ままに 補完したまへ
 `;
 
 export default Index;
