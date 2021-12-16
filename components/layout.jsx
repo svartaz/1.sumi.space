@@ -45,7 +45,7 @@ const yeardayString = (year, day, base, precision) => {
   return `${year.toString(base).toUpperCase()}/${dayInt}.${(dayFrac + "0".repeat(precision)).slice(0, precision)}`;
 };
 
-const Layout = ({ title, sections }) => {
+const Layout = ({ title, sections, children }) => {
   const [date, setDate] = useState("");
 
   useEffect(() => {
@@ -64,6 +64,7 @@ const Layout = ({ title, sections }) => {
         Menu(sections=sections, parent=null)
       main
         h1= title
+        ${children}
         Sections(sections=sections, parent=null)
   `;
 };

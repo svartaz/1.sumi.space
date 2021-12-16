@@ -9,10 +9,12 @@ const sections = [
   {
     title: "caution",
     children: pug`
+      p for english language,
       ul
         li i use ‘þ’ as ‘th’
         li i may omit ‘a’ and ‘þe’
         li i use ‘he’ regardless of gender and no ‘she’
+        li i create #[Link(href="https://github.com/xekri/orthography") romanisation and new orthography] for lanauages
     `,
   },
   {
@@ -75,6 +77,13 @@ const sections = [
         li ****** *******
         li: Link(href="char-1") 硯 and 盈
         li: Link(href="char-2") 侖
+    `
+  },
+  {
+    title: "miscellaneous",
+    children: pug`
+      ul
+        li: Link(href="convert") unicode alphabet convert
     `
   }
 ];
