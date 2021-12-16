@@ -48,7 +48,6 @@ const yeardayString = (year, day, base, precision) => {
 
 const Path = ({ path }) => {
   const segs = path.replace(/^\//, "").split("/");
-  console.log(segs)
   return pug`
   #path
     if path != "/"
