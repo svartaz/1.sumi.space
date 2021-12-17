@@ -231,9 +231,7 @@ const sections = [
         div
           T20210709
           p 案
-        div
-          T20210627
-          a(href="https://skeb.jp/@sabu_ur/works/3") skeb
+        T20210627
         div
           T20210607
           p 本物はもっと肉附きがよい.
@@ -248,7 +246,7 @@ const sections = [
             a(href="https://twitter.com/intent/user?user_id=948471113448792064") 絹豆腐
             Img(src="/char-1/2020-341.png")
         T20201210
-        T20201208
+        //T20201208
         T20201130
         T20201122
         div

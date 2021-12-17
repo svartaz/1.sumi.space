@@ -60,6 +60,13 @@ const Path = ({ path }) => {
   `
 };
 
+const author = {
+  name: "sumi",
+  nameJa: "墨",
+  twiiter: "enkaust",
+  github: "xekri",
+};
+
 const Layout = ({ title, sections, children }) => {
   const [date, setDate] = useState("");
   const [scroll, setScroll] = useState(0);
@@ -79,6 +86,12 @@ const Layout = ({ title, sections, children }) => {
     head
       title= title
       link(rel="icon", href="/sumi.svg")
+
+      meta(name="twitter:site", content="@" + author.twitter)
+      meta(name="twitter:title", content=title)
+      meta(name="twitter:image", content="/char-1/2019-04-23.png")
+      meta(name="twitter:card", content="summary")
+
     .container
       nav
         img(src="/sumi.svg")
