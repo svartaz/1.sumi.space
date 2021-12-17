@@ -26,7 +26,8 @@ const Menu = ({ sections, parent }) => pug`
     for section, i in sections
       - const id = parent ? parent + "-" + i : i;
       li
-        Link(href="#" + id)= section.title
+        a(href="#" + id)
+          span(data-id=id)= section.title
         if "sections" in section
           Menu(sections=section.sections, parent=id)
 `;
@@ -67,19 +68,32 @@ const author = {
   github: "xekri",
 };
 
+const onScroll = () => {
+  const sections = document.querySelectorAll("main section");
+  const currents = [...sections].filter(el => {
+    const { top, bottom } = el.getBoundingClientRect()
+    return 0 <= top && bottom <= document.documentElement.clientHeight;
+  });
+  const klass = "current";
+  for (const el of document.getElementsByClassName(klass))
+    el.classList.remove(klass);
+  for (const el of currents)
+    document.querySelector(`[data-id="${el.id}"]`).classList.add(klass);
+  for (const el of document.querySelectorAll(`.${klass} .${klass}`))
+    el.classList.remove(klass);
+};
+
 const Layout = ({ title, sections, children }) => {
   const [date, setDate] = useState("");
-  const [scroll, setScroll] = useState(0);
-  const onScroll = () => {
-    setScroll(document.documentElement.scrollTop);
-    // to do
-  }
 
   useEffect(() => {
+    document.addEventListener("scroll", onScroll);
+    onScroll();
+
     setInterval(() => {
       setDate(yeardayString(...yearday(new Date()), 10, 5));
     }, 1000 / 10);
-  }, [date])
+  });
 
   const path = useRouter().pathname;
   return pug`
@@ -89,12 +103,12 @@ const Layout = ({ title, sections, children }) => {
 
       meta(name="twitter:site", content="@" + author.twitter)
       meta(name="twitter:title", content=title)
-      meta(name="twitter:image", content="/char-1/2019-04-23.png")
+      meta(name="twitter:image", content="/image/char-1/2019-04-23.png")
       meta(name="twitter:card", content="summary")
 
     .container
       nav
-        img(src="/sumi.svg")
+        img(src="/image/sumi.svg")
         #date= ${date}
         ul
           li

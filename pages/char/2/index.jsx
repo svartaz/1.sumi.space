@@ -20,7 +20,7 @@ const sections = [
         tr
           th
           th
-            img.center(src="/lon.svg", width="48px")
+            img.center(src="/image/char-2/lon.svg", width="48px")
         tr
           th image
           td: T20210812

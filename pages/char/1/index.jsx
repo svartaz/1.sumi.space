@@ -77,9 +77,9 @@ const sections = [
         tr
           th
           td(style={textAlign: "center"})
-            img.center(src="/char-1/suzuli.svg", width="64px")
+            img.center(src="/image/char-1/suzuli.svg", width="64px")
           td(style={textAlign: "center"})
-            img.center(src="/char-1/mitulu.svg", width="64px")
+            img.center(src="/image/char-1/mitulu.svg", width="64px")
         tr
           th name
           for p in [suzuli, mitulu]
@@ -244,14 +244,14 @@ const sections = [
           div
             p wurk in progress
             a(href="https://twitter.com/intent/user?user_id=948471113448792064") 絹豆腐
-            Img(src="/char-1/2020-341.png")
+            Img(src="/image/char-1/2020-341.png")
         T20201210
         //T20201208
         T20201130
         T20201122
         div
           T20201021
-          Img(src="/char-1/2020-10-15.png")
+          Img(src="/image/char-1/2020-10-15.png")
         T20201015
         div
           T20201009
@@ -269,17 +269,17 @@ const sections = [
         //<blockquote class="twitter-tweet" data-theme="dark"><p>/* test */ <a href="https://t.co/cdvn2vvAQ3">pic.twitter.com/cdvn2vvAQ3</a></p>&mdash; 硯玄 (сузури) (@SzrHyn) <a href="https://twitter.com/SzrHyn/status/1301920417381191681?ref_src=twsrc%5Etfw">September 4, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         div
         T20200822
-          Img(src="/char-1/2020-08-31.png")
+          Img(src="/image/char-1/2020-08-31.png")
         //div
           <blockquote class="twitter-tweet" data-theme="dark"><p>- 硯君の表情 考<br/>- 後輩君 <a href="https://t.co/ngIBx6kHit">pic.twitter.com/ngIBx6kHit</a></p>&mdash; 初夏の夜風の涼しさ (@smiqy) <a href="https://twitter.com/smiqy/status/1296894217789136896?ref_src=twsrc%5Etfw">August 21, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           p mitulu: 後から見るとかわいくない
           p suzuli: 後ろ髪は刈り上げる事も有る
         div
           T20200804
-          Img(src="/char-1/2020-08-04.png")
+          Img(src="/image/char-1/2020-08-04.png")
           a(href="https://twitter.com/intent/user?user_id=948471113448792064") 絹豆腐
-          //img(src="/char-1/2020-08-04-1.png")
-          //img(src="/char-1/2020-08-04-2.png")
+          //img(src="/image/char-1/2020-08-04-1.png")
+          //img(src="/image/char-1/2020-08-04-2.png")
         T20200731
         T20200724
         //<blockquote class="twitter-tweet" data-theme="dark"><p>習作 (四肢拘束のつもりだった) <a href="https://t.co/v0mXfg2F6i">pic.twitter.com/v0mXfg2F6i</a></p>&mdash; 初夏の夜風の涼しさ (@sumimq) <a href="https://twitter.com/sumimq/status/1285594214181593088?ref_src=twsrc%5Etfw">July 21, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -288,39 +288,39 @@ const sections = [
         T20200608
         T20200530
         div
-          Img(src="/char-1/2020-04-25.jpg")
+          Img(src="/image/char-1/2020-04-25.jpg")
           a(href="https://twitter.com/intent/user?user_id=800300702937399296") 司ろう。
         T20200424
         T20200414
         T20200413
         div
-          img(src="/char-1/2020-04-08'.jpg")
+          img(src="/image/char-1/2020-04-08'.jpg")
           p @nikuda2929 (有償)
         div 非公開
         //
           div
             p @inuqw
-            Img(src="/char-1/2019-11-25.jpg")
+            Img(src="/image/char-1/2019-11-25.jpg")
             <blockquote class="twitter-tweet" data-theme="dark"><p><a href="https://t.co/WSN80Ga6jB">pic.twitter.com/WSN80Ga6jB</a></p>&mdash; sumi (@melanophil) <a href="https://twitter.com/melanophil/status/1188098375045935104?ref_src=twsrc%5Etfw">October 26, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         div
-          Img(src="/char-1/2019-10-11.jpg")
+          Img(src="/image/char-1/2019-10-11.jpg")
           a(href="https://twitter.com/intent/user?user_id=800300702937399296") 司ろう。
         T20190926
         T20190831
         T20190803
         div
-          Img(src="/char-1/2019-07-26.jpg")
+          Img(src="/image/char-1/2019-07-26.jpg")
           p @AI67448472
         //<blockquote class="twitter-tweet" data-conversation="none" data-theme="dark"><p>遅くなりましたが誕生日おめでとう御座います!スズリくん描かせて頂きました… <a href="https://t.co/3JS1r6kXg2">pic.twitter.com/3JS1r6kXg2</a></p>&mdash; まぁく (@MK2ma_c) <a href="https://twitter.com/MK2ma_c/status/1154736325766942720?ref_src=twsrc%5Etfw">July 26, 2019</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         T20190718
         div
-          Img(src="/char-1/2019-04-23.png")
+          Img(src="/image/char-1/2019-04-23.png")
         div
           T20181204
-          Img(src="/char-1/2018-12-04.jpg")
+          Img(src="/image/char-1/2018-12-04.jpg")
         div
           p 非公開
-          //img(src="/char-1/2018-08-01.png")
+          //img(src="/image/char-1/2018-08-01.png")
     `
   }
 ];

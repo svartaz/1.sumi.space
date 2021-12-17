@@ -79,10 +79,10 @@ const sections = [
       .tiles
           div
             T20181204
-            img(src="/char-1/2018-12-04.jpg")
+            img(src="/image/char-1/2018-12-04.jpg")
           T20190718
           div
-            img(src="/char-1/2019-07-26.jpg")
+            img(src="/image/char-1/2019-07-26.jpg")
             p @AI67448472
           T20201009
           T20201210
@@ -98,9 +98,9 @@ const sections = [
       tr
         th
         td(style={textAlign: "center"})
-          img(src="/char-1/suzuli.svg", width="64px")
+          img(src="/image/char-1/suzuli.svg", width="64px")
         td(style={textAlign: "center"})
-          img(src="/char-1/mitulu.svg", width="64px")
+          img(src="/image/char-1/mitulu.svg", width="64px")
       tr
         th 名
         td: ul
