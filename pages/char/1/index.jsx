@@ -89,9 +89,9 @@ const sections = [
         tr
           th iamge
           td(style={"text-align": "center"})
-            T20201009
-          td(style={"text-align": "center"})
             T20201230
+          td(style={"text-align": "center"})
+            T20201009
             p ⚠
         tr
           th age
