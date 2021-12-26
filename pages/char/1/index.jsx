@@ -327,6 +327,7 @@ const sections = [
 
 const Index = ({ Component, props }) => pug`
   Layout(sections=sections, title=title)
+    a(href="ja") 日本語にての概要
 `;
 
 export default Index;
