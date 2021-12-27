@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Link from 'next/link';
 import Layout from "/components/layout";
@@ -30,7 +29,7 @@ const sections = [
     `
   },
   {
-    title: "moviee",
+    title: "video",
     children: pug`
       ul
         li Arrival (2016)
@@ -38,6 +37,8 @@ const sections = [
         li IDO: INVADED (2019)
         li John Wick (2014)
         li Knives Out (2019)
+        li Memento (2000)
+        li The Imitation Game (2014)
         li The Queen's Gambit (2020)
         li SK∞ (2021)
         li 羅小黑戰記 (2019)
