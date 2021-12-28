@@ -85,6 +85,7 @@ const sections = [
     children: pug`
       ul
         li: Link(href="convert") unicode alphabet convert
+        li: Link(href="calendar") calendar
     `
   }
 ];

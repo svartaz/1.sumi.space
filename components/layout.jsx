@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from "next/router";
+import date, { dateToString } from "./date";
 
 const Section = ({ id, title, children }) => pug`
   section(id=id)
@@ -31,21 +32,6 @@ const Menu = ({ sections, parent }) => pug`
         if "sections" in section
           Menu(sections=section.sections, parent=id)
 `;
-
-const yearday = date => {
-  const year = date.getFullYear();
-  const start = new Date(year, 0, 1);
-  const diff = date - start;
-  const msPerDay = 1000 * 60 * 60 * 24;
-  const day = diff / msPerDay;
-
-  return [year + 10000, day];
-}
-
-const yeardayString = (year, day, base, precision) => {
-  const [dayInt, dayFrac] = day.toString(base).split(".");
-  return `${year.toString(base).toUpperCase()}/${dayInt}.${(dayFrac + "0".repeat(precision)).slice(0, precision)}`;
-};
 
 const Path = ({ path }) => {
   const segs = path.replace(/^\//, "").split("/");
@@ -84,14 +70,12 @@ const onScroll = () => {
 };
 
 const Layout = ({ title, sections, children }) => {
-  const [date, setDate] = useState("");
-
   useEffect(() => {
     document.addEventListener("scroll", onScroll);
     onScroll();
 
     setInterval(() => {
-      setDate(yeardayString(...yearday(new Date()), 10, 5));
+      document.getElementById("date").innerHTML = dateToString(...date(new Date()));
     }, 1000 / 10);
   });
 
@@ -109,7 +93,7 @@ const Layout = ({ title, sections, children }) => {
     .container
       nav
         img(src="/image/sumi.svg")
-        #date= ${date}
+        #date
         ul
           li
             Path(path=path)

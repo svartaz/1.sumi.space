@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from "/components/layout";
-import Ruby from "/components/ruby";
 
 const Img = ({ src, width }) => pug`
   a(href=src): img(src=src, width =width)
@@ -24,28 +23,28 @@ const sections = [
         tr
           th image
           td: T20210812
-      tr
-        th name
-        td 侖 (lòn)
-      tr
-        th personality
-        td logical and ethical
-      tr
-        th appearance
-        td: ul
-          li height 1.8--1.9m
-          li weight 70--75kg
-          li face
-            ul
-              li dropping eyes
-              li thick slanted eyebrows
-              li confident and cynical
-              li wear
-            ul
-              li aloha shirt
-              li sandals
-              li sunglasses
-              li piercings
+        tr
+          th name
+          td 侖 (lòn)
+        tr
+          th personality
+          td logical and ethical
+        tr
+          th appearance
+          td: ul
+            li height 1.8--1.9m
+            li weight 70--75kg
+            li face
+              ul
+                li dropping eyes
+                li thick slanted eyebrows
+                li confident and cynical
+                li wear
+              ul
+                li aloha shirt
+                li sandals
+                li sunglasses
+                li piercings
     `
   },
   {
@@ -62,6 +61,6 @@ const sections = [
 
 const Index = ({ Component, props }) => pug`
   Layout(sections=sections, title=title)
-  `;
+`;
 
 export default Index;
