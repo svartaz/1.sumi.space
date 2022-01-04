@@ -1,21 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100&family=Noto+Sans+TC:wght@100&family=Noto+Sans+JP:wght@100&family=Noto+Sans+Mono:wght@100&family=Noto+Serif:wght@400&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200&family=Noto+Sans+TC:wght@100&family=Noto+Sans+JP:wght@100&family=Noto+Sans+Mono:wght@200&display=swap')
 
 *
   box-sizing: border-box
+
+$navWidth: 12em
+$gap: 1em
 
 body
   margin: 0
   background-color: #000
 
 .container
-  grid-gap: 1em
+  grid-gap: $gap
   margin: 1em
 
   color: lightgray
   font-family: "Noto Sans Display", "Noto Sans TC", "Noto Sans JP", sans-serif
-  font-weight: 100
+  font-weight: 200
 
-  nav, main, section
+  nav, main > div, section
     border: 1px solid
     padding: 1em
     border-inline-end: none
@@ -28,8 +31,7 @@ body
     margin-right: 1em
     top: 1em
     position: sticky
-    width: 12em
-    max-width: calc(100% / 3)
+    width: $navWidth
     & > img
       width: 50%
       display: block
@@ -50,11 +52,12 @@ body
         margin-inline-end: 0.5em
 
   main
-    overflow: hidden
     margin-block-end: 1em
+    & > div
+      margin-inline-start: calc($navWidth + $gap)
     .sections
       display: grid
-      grid-gap: 1em
+      grid-gap: $gap
 
       section
         *:last-child
@@ -78,6 +81,8 @@ ul
 .center
   margin-left: auto
   margin-right: auto
+  td
+    max-width: 360px
 
 table
   border-collapse: collapse
@@ -101,9 +106,9 @@ table
 
 .tiles
   display: grid
-  grid-template-columns: repeat(5, 256px)
+  grid-template-columns: repeat(5, 1fr)
   align-items: start
-  gap: 1em
+  gap: $gap
   & > div
     border-block-start: 1px solid
     border-inline-start: 1px solid

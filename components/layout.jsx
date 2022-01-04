@@ -100,11 +100,11 @@ const Layout = ({ title, sections, children }) => {
             Link(href="#")= title
             Menu(sections=sections, parent=null)
       main
-        header
-          h1= title
-        ${children}
-        Sections(sections=sections, parent=null)
-
+        div
+          header
+            h1= title
+          ${children}
+          Sections(sections=sections, parent=null)
   `;
 };
 
