@@ -22,7 +22,7 @@ const sections = [
       {
         title: "name",
         children: pug`
-          Ruby(main="墨", above="sumi")
+          Ruby(main="雪㠀 墨", above="jukisima sumi")
         `,
       },
       {

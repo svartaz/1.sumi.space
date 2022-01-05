@@ -3,7 +3,7 @@
 *
   box-sizing: border-box
 
-$navWidth: 12em
+$navWidth: 10em
 $gap: 1em
 
 body
@@ -27,11 +27,12 @@ body
     padding-block-end: 0
 
   nav
-    float: left
-    margin-right: 1em
     top: 1em
-    position: sticky
-    width: $navWidth
+    @media only screen and (min-device-width: 640px)
+      margin-right: 1em
+      float: left
+      position: sticky
+      width: $navWidth
     & > img
       width: 50%
       display: block
@@ -54,12 +55,14 @@ body
   main
     margin-block-end: 1em
     & > div
-      margin-inline-start: calc($navWidth + $gap)
+      @media only screen and (min-device-width: 640px)
+        margin-inline-start: calc($navWidth + $gap)
     .sections
       display: grid
       grid-gap: $gap
 
       section
+        overflow: auto
         *:last-child
           margin-block-end: 0
 
@@ -103,17 +106,24 @@ table
     padding: .5em
     [colspan]
       text-align: center
+  td
+    vertical-align: top
 
 .tiles
   display: grid
-  grid-template-columns: repeat(5, 1fr)
   align-items: start
   gap: $gap
+
+  grid-template-columns: minmax(0, 1fr)
+  @media only screen and (min-device-width: 640px)
+    grid-template-columns: repeat(5, minmax(0, 1fr))
   & > div
     border-block-start: 1px solid
     border-inline-start: 1px solid
     padding-block-start: 1em
     padding-inline-start: 1em
+    min-width: 0
+    overflow: auto
     img
       width: 100%
 
@@ -135,3 +145,6 @@ input
   outline: none
   appearance: none
   border: 1px solid
+
+ul
+  margin-block-start: 0

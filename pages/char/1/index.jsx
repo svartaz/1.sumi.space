@@ -73,7 +73,7 @@ const sections = [
   {
     title: "about",
     children: pug`
-      table.center(style={width: "50%"})
+      table.center(style={maxWidth: "100%"})
         tr
           th
           td(style={textAlign: "center"})
@@ -115,7 +115,7 @@ const sections = [
           td black □
         tr
           th location
-          td(colspan=2) japan / prefecture musasi
+          td(colSpan=2) japan / prefecture musasi
         tr
           th occupation
           td graduate student in Univ #[Ruby(main="葦原", above="asipara")] (CS)
