@@ -19,6 +19,7 @@ const suzuli = {
     "gin (yue, [ŋiːn˧])",
     "la .ximrok (jbo, [la ʔximrok])",
   ],
+  age: 23
 };
 const mitulu = {
   heightM: 1.85,
@@ -29,6 +30,7 @@ const mitulu = {
     "ìg (yue, [ɪŋ˧˩])",
     "la .liktis (jbo, [la ʔliktis])",
   ],
+  age: 21
 };
 
 const T20211031 = p => (<><blockquote class="twitter-tweet" data-theme="dark"><p>急遽描いたものですがこれでゆるしてくｄさい <a href="https://t.co/RI31p4pqZN">pic.twitter.com/RI31p4pqZN</a></p>&mdash; 司ろう。 (@shi46_u) <a href="https://twitter.com/shi46_u/status/1454814733920464900?ref_src=twsrc%5Etfw">October 31, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></>);
@@ -67,6 +69,7 @@ const T20190803 = p => (<><blockquote class="twitter-tweet" data-theme="dark"><p
 const T20190718 = p => (<><blockquote class="twitter-tweet" data-theme="dark"><p><a href="https://t.co/tRtU7KUMdD">https://t.co/tRtU7KUMdD</a><a href="https://twitter.com/sikotamazou?ref_src=twsrc%5Etfw">@sikotamazou</a> 先生に依頼していたスズリ君が納品されました　最高に可愛い　文句無し　依頼して良かった</p>&mdash; ſumı (@smiqy) <a href="https://twitter.com/smiqy/status/1151805582556352513?ref_src=twsrc%5Etfw">July 18, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></>);
 const T20181204 = p => (<><blockquote class="twitter-tweet" data-theme="dark"><p>わかんなかったとこは, 捏造した <a href="https://t.co/MPDLpSVi1Q">pic.twitter.com/MPDLpSVi1Q</a></p>&mdash; 一人 (@nasu_zoi) <a href="https://twitter.com/nasu_zoi/status/1069800047636856832?ref_src=twsrc%5Etfw">2018年12月4日</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></>);
 const T20200710 = p => (<><blockquote class="twitter-tweet" data-theme="dark"><p>Commission<a href="https://t.co/GCP58cuKd5">https://t.co/GCP58cuKd5</a> <a href="https://t.co/5sHvE7QLqa">pic.twitter.com/5sHvE7QLqa</a></p>&mdash; ミネむら (@minefarmkun) <a href="https://twitter.com/minefarmkun/status/1281632927529332736?ref_src=twsrc%5Etfw">July 10, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></>);
+const T20220107 = p => (<><blockquote class="twitter-tweet" data-theme="dark"><p>Skebありがとうございました！<a href="https://t.co/sdYui5BcE1">https://t.co/sdYui5BcE1</a><a href="https://twitter.com/hashtag/Skeb?src=hash&amp;ref_src=twsrc%5Etfw">#Skeb</a> <a href="https://t.co/nSLnroOfRg">pic.twitter.com/nSLnroOfRg</a></p>&mdash; Pozon2🔞 (@Pozonuun) <a href="https://twitter.com/Pozonuun/status/1479281810123390978?ref_src=twsrc%5Etfw">January 7, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></>);
 
 const title = "suzuli & mitulu";
 const sections = [
@@ -321,6 +324,7 @@ const sections = [
         div
           p 非公開
           //img(src="/image/char-1/2018-08-01.png")
+        T20220107
     `
   }
 ];

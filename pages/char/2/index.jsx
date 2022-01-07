@@ -43,11 +43,12 @@ const sections = [
                 li thick slanted eyebrows
                 li confident and cynical
                 li wear
-              ul
-                li aloha shirt
-                li sandals
-                li sunglasses
-                li piercings
+                  ul
+                    li aloha shirt
+                    li sandals
+                    li sunglasses
+                    li piercings
+            li tattoo on neck (undefined)
     `
   },
   {
