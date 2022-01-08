@@ -104,12 +104,8 @@ const sections = [
             img(src="/image/char-1/mitulu.svg", width="64px")
         tr
           th 名
-          td: ul
-            li 硯
-            li suzuli (ja, [sɯzɯɾi])
-          td: ul
-            li 盈
-            li mitulu (ja, [mitɯɾɯ])
+          td 硯 suzuli
+          td 盈 mitulu
         tr
           th 畫像
           td(style={textAlign: "center"})
@@ -117,45 +113,36 @@ const sections = [
           td(style={textAlign: "center"})
             T20201009
         tr
-          th 年齡
-          td 23歳
-          td 21歳
-        tr
-          th 身長/m
-          for p in [suzuli, mitulu]
-            td #{p.heightM}
-        tr
-          th 體質量/kg
-          for p in [suzuli, mitulu]
-            td #{p.weightKg}
-        tr
-          th(rowSpan=2) 性
+          th(rowSpan=2) 概要
           td: ul
-            li 男性（外性器と 性激素と 性別合和に 據る）
-            li 男性愛者
-            li 受け寄り
-            li 首 弱し
-            li 性交する のみの 相手 多し
+            li 大學院生 (情報科學)
+            li 自稱: 普段は “わたし”. 心を 許したる 相手には “僕”.
+            li 硯を “スズリ君” と 呼ぶ
+            li 1.75m 70kg 23歳
+            li 無口. 無表情. 一見は 怖くとも 話さば 丁寧・親切なれば 研究室の 後輩には 慕はる
+            li 快樂主義者. 性交相手 多し.
+            li 大麻と LSDを 好む. 酒をも たまに 飲む (強い).
+            li 趣味: 讀書 (特にSF), 程序設計, 鋼琴
+            li 性交時 受け 寄り. 首弱し.
           td: ul
-            li 男性（外性器と 性激素と 性別合和に 據る）
-            li 男性愛者
-            li 受け寄り
-            li 胸 弱し
+            li 大學生 (數學)
+            li 自稱: “僕”
+            li 盈を “ミツル” と 呼ぶ
+            li 1.85m 80kg 21歳
+            li 活潑. 陽氣. 顏 廣く 人に 好かれど、心を 許す 相手は 少なし
+            li 一途. 一人と 長く 交際するを 求む.
+            li 大麻を 好む. 酒も 好めど 弱し.
+            li 趣味: 筋力鍛錬, 映畫鑑賞, 服飾
+            li 性交時 受け 寄り. 乳首弱し.
         tr
           td(colSpan=2): ul
-            li 約1回/4日の 頻度にて 性交す. 約3/4の 比にて 硯が 攻めと なる. 攻め受けに 據らず 硯が 主導し勝ち.
+            li 兩者 受くる と 甘ゆる を 好めど, 硯 盈に 讓り 攻むる 多し.
         tr
-          th 服裝
-          td
-            ul
-              li 單純 (過度の 裝飾を 好まず)
-              li 無彩色
-          td (未定. 洒脱 ならまほし.)
-        tr
-          th(rowSpan=2) 外見
+          th(rowSpan=2) 外見詳細
           td: ul
+            li 服裝: 無彩色, 單純なる を 好む
             li 顏: 無表情. じと目. 威壓的には あらず.
-            li 體: 健康的. 引き締まりたる筋肉質. 色白.
+            li 體: 健康的. 筋肉質 かつ 細柄. 色白.
             li 體毛: 薄墨色. 量は 平均的なれど 自ら 薄くす.
             li 髮: 薄墨色. 右目隱れ.
             li 男根: 下反り. 勃起時半剝け. 210mm (但し 數值は 一例なり, 視覺上は 尚 大きくとも 良し).
@@ -165,65 +152,12 @@ const sections = [
                 li すべて 着脱可能なれば 繪にては 省略せられ う. 殊に 插入時は 殆ど 必ず プリンスアルバートを 外す.
               T20200317
           td: ul
-            li 顏: 童顔. 太め 吊り眉. 垂れ目. 顎髭. いたづらめくる 笑顏.
-            li 體: 健康的, 筋肉質 かつ 大柄.
-            li 體毛: 黑色. やや 毛部下目.
+            li 服裝: 未定（拘る方）
+            li 顏: 童顔. 太め 吊り眉. 垂れ目. 顎髭. にやりとせる笑顏.
+            li 體: 健康的. 筋肉質 かつ 大柄.
+            li 體毛: 黑色. やや 毛深め.
             li 髮: 黑色. 兩目隱れ なれど 左目 見𛀁隱れす. やや 癖毛.
             li 男根: 上反り. 勃起時半剝け. 180mm (但し 數值は 一例なり, 視覺上は 尚 大きくとも 良し).
-        tr
-          td(colSpan=2) （服裝の 類は 仔細 決まらざれば 自由なり）
-        tr
-          th 自稱
-          td: ul
-            li 日常にては "わたし"
-            li 親しき 人の 前や 性交中は "僕"
-          td 僕
-        tr
-          th 他方の呼び方
-          td ミツル
-          td スズリ君
-        tr
-          th 所在
-          td(colSpan=2) 日本, 武蔵縣 (我れらが 世界に 言ふ 東京都)
-        tr
-          th 言語
-          td: ul
-            li 日本語 (共通語)
-            li 英語 (アメリカ)
-            li 粵語
-          td: ul
-            li 日本語 (共通語と京阪式アクセントの混淆)
-            li 英語 (イギリス)
-            li ロシヤ語
-        tr
-          th 身分
-          td 大學院生
-          td 大學生
-        tr
-          th 趣味
-          td: ul
-            li プログラミング
-            li ベース
-            li 讀書 (SF)
-            li 乱交
-            li 大麻
-            li LSD
-          td: ul
-            li 語學
-            li ピアノ
-            li 映畫鑑賞
-            li 筋力トレーニング
-            li 酒 (弱し)
-        tr
-          th 性格
-          td: ul
-            li 冷静
-            li 獨立不羈
-            li 快樂主義
-          td: ul
-            li 潑溂
-            li 社交的
-            li 一途
     `
   },
   {

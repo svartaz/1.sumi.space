@@ -17,7 +17,7 @@ const sections = [
     `,
   },
   {
-    title: "author",
+    title: "auþor",
     sections: [
       {
         title: "name",
@@ -29,7 +29,7 @@ const sections = [
         title: "about"
         , children: pug`
           ul
-            li i programme things (like þis website)
+            li i programme þings (like þis website)
             li i speak japanese (native) and english (B2)
             li i stream gameplay some times
             li i create #[Link(href="https://github.com/xekri/orthography") romanisation and new orthography] for lanauages
@@ -66,7 +66,7 @@ const sections = [
           ul
             li public: #[a(href="https://twitter.com/intent/tweet?text=@enkaust") twitter reply]
             li private: discord DM sumi#1757
-          p prefer public method unless thy message contains my personal information
+          p prefer public method unless þy message containeþy my personal information
         `
       },
     ],

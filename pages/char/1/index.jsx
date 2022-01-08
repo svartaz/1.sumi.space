@@ -189,7 +189,7 @@ const sections = [
             li preference utilitarianism
             li antinatalism
         tr
-          th hoew to address þe oþer
+          th how to address þe oþer
           td ミツル (mitulu)
           td スズリ君 (suzuli kun)
         tr
