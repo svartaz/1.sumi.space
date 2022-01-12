@@ -184,7 +184,7 @@ const Index = ({ Component, props }) => pug`
         br
         |本pageは 硯と盈を 描かむと する 日本語話者の 爲の #[Link(href="..") ..]の 要約に 侍り
       li
-        |any ambiguous description is caused by þe auþor not being an artist, and þou mayst complement it.
+        |any ambiguous description is caused by þe auþor not being an artist, and ye mayst complement it.
         br
         |作者の 畫描き ならざれば 生する 曖昧なる 點は 思ふ 儘に 補完し 給へ
 `;
