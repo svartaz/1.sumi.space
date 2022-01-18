@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from "/components/layout";
-import date, { dateToString } from "/components/date";
+import { getDate } from "/public/date";
 
 const title = "calendar";
 const sections = [
@@ -16,7 +16,10 @@ const sections = [
 const Index = ({ Component, props }) => {
   useEffect(() => {
     document.getElementById("in").addEventListener("input", ({ target }) => {
-      document.getElementById("out").value = date(new Date(target.value + "T00:00:00")).map(Math.floor).join("/");
+      let values = target.value.split("-").map(x => parseInt(x));
+      values[1] -= 1;
+      const { year, yearday, month, monthday } = getDate(...values);
+      document.getElementById("out").value = `${year}/${yearday}(${month}/${monthday})`;
     });
   });
 

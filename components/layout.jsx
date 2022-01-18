@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from "next/router";
-import date, { dateToString } from "./date";
+import { getDate, getDay } from "/public/date";
 
 const Section = ({ id, title, children }) => pug`
   section(id=id)
@@ -75,7 +75,10 @@ const Layout = ({ title, sections, children }) => {
     onScroll();
 
     setInterval(() => {
-      document.getElementById("date").innerHTML = dateToString(...date(new Date()));
+      const d = new Date();
+      const day = getDay(d);
+      const { year, yearday, month, monthday } = getDate(d.getFullYear(), d.getMonth(), d.getDate());
+      document.getElementById("date").innerHTML = `${year}/${month}/${monthday}${(day.toString() + "00000").slice(1, 7)}`;
     }, 1000 / 10);
   });
 
