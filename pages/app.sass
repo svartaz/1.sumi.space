@@ -8,7 +8,7 @@ $gap: 1em
 
 body
   margin: 0
-  background-color: #000
+  background-color: black
 
 .container
   grid-gap: $gap
@@ -41,7 +41,7 @@ body
     & > ul
       margin-top: 1em
       .current
-        background-color: #fff3
+        background-color: #fff2
     & > #date
       margin-top: 1em
       font-family: "Noto Sans Mono"
@@ -102,7 +102,7 @@ table
     text-align: right
   th, td
     display: table-cell
-    border: 1px solid #fff2
+    border: 1px solid dimgray
     padding: .5em
     [colspan]
       text-align: center
@@ -148,3 +148,7 @@ input
 
 ul
   margin-block-start: 0
+
+tr.vertical th
+  writing-mode: vertical-lr
+  text-align: right
