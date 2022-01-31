@@ -10,11 +10,11 @@ const sections = [
         li 商業BLを讀む #[br]
         li #[a(href="/char") OC]を考へ、拙いながら描いたり、#[a(href="https://skeb.jp/@sm") Skeb]で依頼する
         li FF14・メギド72・他gameを遊び、偶に#[a(href="https://www.youtube.com/channel/UC5TRwGjAuKZkfCGslswfqXA") YouTube]でVTuberの眞似事をする
-        li #[a(href="https://github.com/xekri/linguistic") 言語の正書法]を改造する
-        li 語學（粵語・ポーランド語）
-        li #[a(href="https://www.magwatta.com/users/xDFuZzr1VK1zVObs") 性行爲]（1.7m・54kg・凹・PrEP）
-        li アナル擴張（55mm）
         li 性器モザイク（刑法第175條）・R18（青少年條例）などの表現規制・人權侵害に抗議する
+        li #[a(href="https://github.com/xekri/linguistic") 言語の正書法]を改造する
+        li 語學（粵語・ロシヤ語）
+        li #[a(href="https://www.magwatta.com/users/xDFuZzr1VK1zVObs") 性行爲]（1.7m・54kg・凹・PrEP）
+        li アナル擴張（30τ mm）
     `,
   },
   {
