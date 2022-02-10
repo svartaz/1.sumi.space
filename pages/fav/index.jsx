@@ -6,6 +6,7 @@ const title = "sumi";
 const sections = [
   {
     title: "novel (author)",
+    id: "novel",
     children: pug`
       ul
         li 1984 (George Orwell)
@@ -30,6 +31,7 @@ const sections = [
   },
   {
     title: "comic (author)",
+    id: "comic",
     children: pug`
       ul
         li Artiste
@@ -70,6 +72,7 @@ const sections = [
   },
   {
     title: "video (year)",
+    id: "video",
     children: pug`
       ul
         li Arrival (2016)
@@ -94,7 +97,19 @@ const sections = [
         li ヨルムンガンド (2012)
         li 劇場版 少女☆歌劇 レヴュースタァライト (2021)
     `
-  }
+  },
+  {
+    title: "game",
+    id: "game",
+    children: pug`
+      ul
+        li 女神異聞録デビルサバイバー (2009)
+        li FINAL FANTASY XIV (2010)
+        li メギド72 (2017)
+        li 十三機兵防衛圏 (2019)
+        li OMORI (2020)
+    `
+  },
 ];
 
 const Index = ({ Component, props }) => pug`

@@ -8,6 +8,7 @@ const title = "sumi";
 const sections = [
   {
     title: "caution",
+    id: "caution",
     children: pug`
       p for english language, i
       ul
@@ -18,6 +19,7 @@ const sections = [
   },
   {
     title: "auþor",
+    id: "author",
     sections: [
       {
         title: "name",
@@ -73,6 +75,7 @@ const sections = [
   },
   {
     title: "character",
+    id: "char",
     children: pug`
       ul
         li ****** *******
@@ -82,6 +85,7 @@ const sections = [
   },
   {
     title: "miscellaneous",
+    id: "misc",
     children: pug`
       ul
         li: Link(href="convert") unicode alphabet convert

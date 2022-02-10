@@ -14,7 +14,7 @@ const Section = ({ id, title, children }) => pug`
 const Sections = ({ sections, parent }) => pug`
   .sections
     for section, i in sections
-      - const id = parent ? parent + "-" + i : i;
+      - const id = section.id || (parent ? parent + "-" + i : i);
       Section(id=id, title=section.title)
         if "sections" in section
           Sections(sections=section.sections, parent=id)
@@ -25,7 +25,7 @@ const Sections = ({ sections, parent }) => pug`
 const Menu = ({ sections, parent }) => pug`
   ul
     for section, i in sections
-      - const id = parent ? parent + "-" + i : i;
+      - const id = section.id || (parent ? parent + "-" + i : i);
       li
         a(href="#" + id)
           span(data-id=id)= section.title
