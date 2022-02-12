@@ -87,6 +87,10 @@ ul
   td
     max-width: 360px
 
+.tables
+  display: flex
+  justify-content: space-evenly
+
 table
   border-collapse: collapse
   border-top: 1px solid
@@ -102,12 +106,21 @@ table
     text-align: right
   th, td
     display: table-cell
-    border: 1px solid dimgray
+    border: 1px solid #222
     padding: .5em
     [colspan]
       text-align: center
   td
     vertical-align: top
+
+table:not(.no-top)
+  tr:first-of-type th
+    writing-mode: vertical-lr
+    text-align: right
+
+table:not(.no-left)
+  tr th:first-of-type
+    text-align: right
 
 .tiles
   display: grid
@@ -152,3 +165,7 @@ ul
 tr.vertical th
   writing-mode: vertical-lr
   text-align: right
+
+.lines
+  white-space: pre-line
+

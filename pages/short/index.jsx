@@ -17,6 +17,16 @@ const sections = [
     `,
   },
   {
+    title: "言語",
+    children: pug`
+      ul
+        li JA 日：母語。文語が好き。
+        li EN 英：B2。英檢準一級。
+        li ZH 華：A2。HSK4級。
+        li RU 露：A1。學習中。
+    `,
+  },
+  {
     title: "アカウント",
     children: pug`
       ul

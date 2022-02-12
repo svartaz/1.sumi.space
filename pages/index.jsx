@@ -79,8 +79,8 @@ const sections = [
     children: pug`
       ul
         li ****** *******
-        li: Link(href="char/1") 硯 and 盈
-        li: Link(href="char/2") 侖
+        li: a(href="char/1") 硯 and 盈
+        li: a(href="char/2") 侖
     `
   },
   {
