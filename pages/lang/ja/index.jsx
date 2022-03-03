@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Link from 'next/link';
 import Layout from "/components/layout";
@@ -140,6 +139,14 @@ const sections = [
                 td kul
                 td jokal
               tr
+                th compound
+                td 'i
+                td mi
+                td kik'i
+                td s'i
+                td kul'i
+                td jokal'i
+              tr
                 th negation
                 td 'azal'
                 td mi'zal
@@ -181,6 +188,14 @@ const sections = [
                 td jokal'as
               tr
                 th perfective
+                td 'in'
+                td mi'n
+                td kik'in
+                td s'in
+                td kul'in
+                td jokal'in
+              tr
+                th progressive
                 td 'ital'
                 td mi'tal
                 td kik'ital
@@ -209,7 +224,7 @@ const sections = [
                 td kik'eba
                 td mi'leba
                 td s'eba
-                td k'eba
+                td kul'eba
                 td jokal'eba
               tr
                 th imperative
@@ -217,14 +232,32 @@ const sections = [
                 td mi'le
                 td kik'e
                 td s'e
-                td k'e
+                td kul'e
                 td jokal'e
+              tr
+                th nominal
+                td 'laku
+                td mi'laku
+                td kik'aku
+                td s'aku
+                td kul'aku
+                td jokal'aku
+              tr
+                th nominal
+                td 'laku
+                td mi'laku
+                td kik'aku
+                td s'aku
+                td kul'aku
+                td jokal'aku
+
 
           ul
             li we have optinal special contractions in terminal form.
               ul
                 li 'azal → 'az
                 li 'ital → 'ita
+                li ...kal'aku → ...ku
                 li ...kal → ...ki
             li terminal form ends in a consonant but pronounce it as if we have ‹-u›
 
@@ -262,9 +295,8 @@ const sections = [
           .tables
             table
               tr
-                td cat
-                td neko
-
+                td 汽車は流星の疾きに、二百里の春を貫いて、行くわれを七條のプラツトフオームの上に振り落す。
+                td KiSja pa LiuSeg ca pajaku ni, NiPak Li ca palu vo tulanuk'i, juk va vo Sit Deu ca #[i platform] ca upe pe puli-oti'sas.
         `,
       },
     ],
