@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Head from 'next/head';
 import { useRouter } from "next/router";
 import { getDate, getDay } from "/public/date";
 
@@ -84,13 +85,13 @@ const Layout = ({ title, sections, children }) => {
 
   const path = useRouter().pathname;
   return pug`
-    head
+    Head
       title= title
       link(rel="icon", href="/sumi.svg")
 
       meta(name="twitter:site", content="@" + author.twitter)
       meta(name="twitter:title", content=title)
-      meta(name="twitter:image", content="/image/char-1/2019-04-23.png")
+      meta(name="twitter:image", content="/image/sumi.png")
       meta(name="twitter:card", content="summary")
 
     .container

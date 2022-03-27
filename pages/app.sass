@@ -107,7 +107,7 @@ table
   th, td
     display: table-cell
     border: 1px solid #222
-    padding: .5em
+    padding: 1em
     [colspan]
       text-align: center
   td
@@ -168,3 +168,9 @@ tr.vertical th
 
 .lines
   white-space: pre-line
+
+p
+  margin: 0
+
+p:not(:first-child)
+  margin-block-start: 1em
