@@ -1,6 +1,7 @@
 const msPerDay = 1000 * 60 * 60 * 24;
 
-const isLeap = year => year % 4 == 0 && year % 128 != 0;
+const isLeap = year =>
+  (year - 2000) % 4 == 0 && (year - 2000) % 128 != 0;
 
 const getYear = (oldYear, oldMonth, yearday) =>
   oldYear + (12 / 2 < oldMonth && yearday < 366 / 2
@@ -44,7 +45,7 @@ exports.getDate = (y, m, d) => {
     month,
     monthName: monthNames[month],
     monthday: getMonthday(yearday),
-    weakdayName: getWeekdayName(yearday)
+    weekdayName: getWeekdayName(yearday)
   }
 };
 

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 import { useRouter } from "next/router";
-import { getDate, getDay } from "/public/date";
+import { getDate, getDay } from "/public/date1";
 
 const Section = ({ id, title, children }) => pug`
   section(id=id)
@@ -78,8 +78,8 @@ const Layout = ({ title, sections, children }) => {
     setInterval(() => {
       const d = new Date();
       const day = getDay(d);
-      const { year, yearday, month, monthday } = getDate(d.getFullYear(), d.getMonth(), d.getDate());
-      document.getElementById("date").innerHTML = `${year}/${month}/${monthday}${(day.toString() + "00000").slice(1, 7)}`;
+      const { year, yearDay, month, monthDay } = getDate(d);
+      document.getElementById("date").innerHTML = `${year}/${month}/${monthDay}${(day.toString() + "00000").slice(1, 7)}`;
     }, 1000 / 10);
   });
 

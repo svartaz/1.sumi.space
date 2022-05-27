@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from "/components/layout";
-import { getDate } from "/public/date";
+import { getDate } from "/public/date1";
 
 const title = "calendar";
 const sections = [
@@ -43,13 +43,11 @@ const Index = ({ Component, props }) => {
     const today = document.querySelector(".yearday-" + getDate(d.getFullYear(), d.getMonth(), d.getDate()).yearday);
     today.classList.add("today");
     today.style.color = "black";
-    today.style.backgroundColor = "white";
+    today.style['font-weight'] = "bold";
 
     document.getElementById("in").addEventListener("input", ({ target }) => {
-      let values = target.value.split("-").map(x => parseInt(x));
-      values[1] -= 1;
-      const { year, yearday, month, monthday } = getDate(...values);
-      document.getElementById("out").value = `${year}/${yearday}(${month}/${monthday})`;
+      const { year, yearDay, month, monthDay } = getDate(new Date(target.value));
+      document.getElementById("out").value = `${year}/${yearDay}(${month}/${monthDay})`;
     });
   });
 
